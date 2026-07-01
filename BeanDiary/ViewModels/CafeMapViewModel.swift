@@ -1,5 +1,6 @@
 import MapKit
 import SwiftData
+import SwiftUI
 
 @MainActor
 @Observable
