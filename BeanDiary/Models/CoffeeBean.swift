@@ -8,6 +8,7 @@ final class CoffeeBean {
     var origin: String?
     var roastLevel: String?
     var analysisJSON: String?
+    var analysisFetchedAt: Date?
     var createdAt: Date
 
     @Relationship(deleteRule: .cascade, inverse: \CoffeeLog.bean)
@@ -19,6 +20,7 @@ final class CoffeeBean {
         origin: String? = nil,
         roastLevel: String? = nil,
         analysisJSON: String? = nil,
+        analysisFetchedAt: Date? = nil,
         createdAt: Date = .now
     ) {
         self.name = name
@@ -26,6 +28,7 @@ final class CoffeeBean {
         self.origin = origin
         self.roastLevel = roastLevel
         self.analysisJSON = analysisJSON
+        self.analysisFetchedAt = analysisFetchedAt
         self.createdAt = createdAt
         self.logs = []
     }

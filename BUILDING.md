@@ -50,7 +50,18 @@ git push -u origin main
 |-------|------|
 | Phase 1 | 커피 기록, 홈 통계, 타임라인 |
 | Phase 1b | 사진·영상 첨부 |
-| Phase 2~4 | 예정 (Gemini, YouTube, 지도) |
+| Phase 2 | Gemini AI 원두 분석 (API 키 설정 필요) |
+| Phase 3~4 | 예정 (YouTube, 지도) |
+
+## Gemini API 키 설정 (Phase 2)
+
+1. [Google AI Studio](https://aistudio.google.com/apikey)에서 API 키 발급
+2. 앱 **더보기 → 설정 → Gemini API 키** 입력
+3. **원두** 탭에서 원두 선택 → **AI 분석 시작**
+
+분석 결과는 `CoffeeBean.analysisJSON`에 캐시되어 같은 원두 재조회 시 API 호출을 줄입니다.
+
+> Firebase AI Logic으로 전환하려면 Firebase Console에서 iOS 앱을 등록하고 `GoogleService-Info.plist`를 추가하세요. (추후 지원)
 
 ## 알려진 제한
 

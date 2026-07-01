@@ -19,7 +19,7 @@ struct MainTabView: View {
                     Label("기록", systemImage: "plus.circle.fill")
                 }
 
-            BeansListPlaceholderView()
+            BeansListView()
                 .tabItem {
                     Label("원두", systemImage: "leaf.fill")
                 }

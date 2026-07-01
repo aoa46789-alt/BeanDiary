@@ -22,4 +22,17 @@ enum PreviewData {
 
         return container
     }()
+
+    static var sampleBean: CoffeeBean {
+        let bean = CoffeeBean(
+            name: "에티오피아 예가체프 G1",
+            roaster: "OOO 로스터스",
+            origin: "예가체프",
+            roastLevel: "라이트"
+        )
+        #if DEBUG
+        bean.storeAnalysis(.preview)
+        #endif
+        return bean
+    }
 }
