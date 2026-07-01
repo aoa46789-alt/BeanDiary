@@ -53,7 +53,8 @@ git push -u origin main
 | Phase 2 | Gemini AI 원두 분석 (API 키 설정 필요) |
 | Phase 3 | YouTube 레시피 검색·재생·AI 파싱 + EK→C40 환산 |
 | Phase 3d~f | 브루잉 스톱워치 + 시음 노트 |
-| Phase 4 | 예정 (Live Activity, 지도) |
+| Phase 4a | 카페 지도 (MapKit 검색, 필터, 좋아요/방문예정/숨김, AI 미리보기) |
+| Phase 4 | 예정 (Live Activity, 지도 고도화) |
 
 ## Gemini API 키 설정 (Phase 2)
 
@@ -71,6 +72,15 @@ git push -u origin main
 2. API 키 발급 (Gemini와 동일 키 사용 가능)
 3. 앱 **더보기 → 설정 → YouTube API 키** 입력 (비워두면 Gemini 키 재사용)
 4. **원두** → 원두 선택 → **YouTube 레시피 찾기** → 영상 **레시피 분석**
+
+## 카페 지도 (Phase 4a)
+
+1. **지도** 탭에서 주변 카페 확인 (샘플 데이터 + 직접 추가)
+2. **+** 버튼 → 카페명 검색 → MapKit 결과에서 추가
+3. 핀 탭 → **맛있었어요** / **방문 예정** / **숨기기**
+4. 필터: 전체, 좋아요, 방문 예정, 콜럼버스, 드립 전문, 숨긴 곳
+5. Gemini API 키 설정 시 **AI 미리보기** (콜럼버스·드립·방문예정 카페)
+6. **Apple 지도** / **네이버 지도**로 길찾기
 
 ## 알려진 제한
 

@@ -32,7 +32,7 @@
 		B10000000000000000000023 /* TimelineEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000023 /* TimelineEntryRow.swift */; };
 		B10000000000000000000024 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000024 /* HistoryView.swift */; };
 		B10000000000000000000025 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000025 /* MoreView.swift */; };
-		B10000000000000000000026 /* CafeMapPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000026 /* CafeMapPlaceholderView.swift */; };
+		B10000000000000000000026 /* CafeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000060 /* CafeMapView.swift */; };
 		B10000000000000000000031 /* BeanAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000031 /* BeanAnalysis.swift */; };
 		B10000000000000000000032 /* GeminiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000032 /* GeminiConfiguration.swift */; };
 		B10000000000000000000033 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000033 /* GeminiService.swift */; };
@@ -55,6 +55,16 @@
 		B10000000000000000000050 /* BrewStepTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000053 /* BrewStepTimelineView.swift */; };
 		B10000000000000000000051 /* TastingNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000054 /* TastingNoteView.swift */; };
 		B10000000000000000000052 /* BrewRecipeSummaryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000055 /* BrewRecipeSummaryBar.swift */; };
+		B10000000000000000000053 /* CafeVisitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000056 /* CafeVisitStatus.swift */; };
+		B10000000000000000000054 /* CafeMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000057 /* CafeMapService.swift */; };
+		B10000000000000000000055 /* CafePreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000058 /* CafePreviewService.swift */; };
+		B10000000000000000000056 /* CafeMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000059 /* CafeMapViewModel.swift */; };
+		B10000000000000000000057 /* CafeDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000061 /* CafeDetailSheet.swift */; };
+		B10000000000000000000058 /* CafeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000062 /* CafeListView.swift */; };
+		B10000000000000000000059 /* CafeFilterChips.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000063 /* CafeFilterChips.swift */; };
+		B10000000000000000000060 /* CafePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000064 /* CafePinView.swift */; };
+		B10000000000000000000061 /* CafePreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000065 /* CafePreviewCard.swift */; };
+		B10000000000000000000062 /* AddCafeSearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000066 /* AddCafeSearchSheet.swift */; };
 		B10000000000000000000029 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* BrewMethod.swift */; };
 		B10000000000000000000028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -85,8 +95,18 @@
 		B20000000000000000000023 /* TimelineEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntryRow.swift; sourceTree = "<group>"; };
 		B20000000000000000000024 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B20000000000000000000025 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
-		B20000000000000000000026 /* CafeMapPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapPlaceholderView.swift; sourceTree = "<group>"; };
 		B20000000000000000000031 /* BeanAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanAnalysis.swift; sourceTree = "<group>"; };
+		B20000000000000000000056 /* CafeVisitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeVisitStatus.swift; sourceTree = "<group>"; };
+		B20000000000000000000057 /* CafeMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapService.swift; sourceTree = "<group>"; };
+		B20000000000000000000058 /* CafePreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePreviewService.swift; sourceTree = "<group>"; };
+		B20000000000000000000059 /* CafeMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000060 /* CafeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapView.swift; sourceTree = "<group>"; };
+		B20000000000000000000061 /* CafeDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailSheet.swift; sourceTree = "<group>"; };
+		B20000000000000000000062 /* CafeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListView.swift; sourceTree = "<group>"; };
+		B20000000000000000000063 /* CafeFilterChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFilterChips.swift; sourceTree = "<group>"; };
+		B20000000000000000000064 /* CafePinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePinView.swift; sourceTree = "<group>"; };
+		B20000000000000000000065 /* CafePreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePreviewCard.swift; sourceTree = "<group>"; };
+		B20000000000000000000066 /* AddCafeSearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCafeSearchSheet.swift; sourceTree = "<group>"; };
 		B20000000000000000000032 /* GeminiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiConfiguration.swift; sourceTree = "<group>"; };
 		B20000000000000000000033 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
 		B20000000000000000000034 /* BeanDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanDetailViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +189,7 @@
 				B20000000000000000000009 /* UserGrinderSettings.swift */,
 				B20000000000000000000010 /* CafePreview.swift */,
 				B20000000000000000000031 /* BeanAnalysis.swift */,
+				B20000000000000000000056 /* CafeVisitStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +205,8 @@
 				B20000000000000000000042 /* YouTubeService.swift */,
 				B20000000000000000000043 /* GrindConverterService.swift */,
 				B20000000000000000000044 /* RecipeParserService.swift */,
+				B20000000000000000000057 /* CafeMapService.swift */,
+				B20000000000000000000058 /* CafePreviewService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -194,6 +217,7 @@
 				B20000000000000000000034 /* BeanDetailViewModel.swift */,
 				B20000000000000000000045 /* RecipeSearchViewModel.swift */,
 				B20000000000000000000051 /* BrewGuideViewModel.swift */,
+				B20000000000000000000059 /* CafeMapViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -270,7 +294,13 @@
 		B50000000000000000000012 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000026 /* CafeMapPlaceholderView.swift */,
+				B20000000000000000000060 /* CafeMapView.swift */,
+				B20000000000000000000061 /* CafeDetailSheet.swift */,
+				B20000000000000000000062 /* CafeListView.swift */,
+				B20000000000000000000063 /* CafeFilterChips.swift */,
+				B20000000000000000000064 /* CafePinView.swift */,
+				B20000000000000000000065 /* CafePreviewCard.swift */,
+				B20000000000000000000066 /* AddCafeSearchSheet.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -413,7 +443,17 @@
 				B10000000000000000000023 /* TimelineEntryRow.swift in Sources */,
 				B10000000000000000000024 /* HistoryView.swift in Sources */,
 				B10000000000000000000025 /* MoreView.swift in Sources */,
-				B10000000000000000000026 /* CafeMapPlaceholderView.swift in Sources */,
+				B10000000000000000000026 /* CafeMapView.swift in Sources */,
+				B10000000000000000000053 /* CafeVisitStatus.swift in Sources */,
+				B10000000000000000000054 /* CafeMapService.swift in Sources */,
+				B10000000000000000000055 /* CafePreviewService.swift in Sources */,
+				B10000000000000000000056 /* CafeMapViewModel.swift in Sources */,
+				B10000000000000000000057 /* CafeDetailSheet.swift in Sources */,
+				B10000000000000000000058 /* CafeListView.swift in Sources */,
+				B10000000000000000000059 /* CafeFilterChips.swift in Sources */,
+				B10000000000000000000060 /* CafePinView.swift in Sources */,
+				B10000000000000000000061 /* CafePreviewCard.swift in Sources */,
+				B10000000000000000000062 /* AddCafeSearchSheet.swift in Sources */,
 				B10000000000000000000031 /* BeanAnalysis.swift in Sources */,
 				B10000000000000000000032 /* GeminiConfiguration.swift in Sources */,
 				B10000000000000000000033 /* GeminiService.swift in Sources */,
@@ -499,6 +539,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "커피 기록용 사진을 촬영하기 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "커피 기록에 사진과 영상을 첨부하기 위해 앨범 접근이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 카페 검색 및 지도 표시를 위해 위치 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -530,6 +571,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "커피 기록용 사진을 촬영하기 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "커피 기록에 사진과 영상을 첨부하기 위해 앨범 접근이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 카페 검색 및 지도 표시를 위해 위치 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;

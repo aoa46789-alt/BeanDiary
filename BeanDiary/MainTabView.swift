@@ -9,7 +9,7 @@ struct MainTabView: View {
                     Label("홈", systemImage: "house.fill")
                 }
 
-            CafeMapPlaceholderView()
+            CafeMapView()
                 .tabItem {
                     Label("지도", systemImage: "map.fill")
                 }
