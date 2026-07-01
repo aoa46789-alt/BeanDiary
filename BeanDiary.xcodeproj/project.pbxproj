@@ -40,6 +40,16 @@
 		B10000000000000000000035 /* BeansListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000035 /* BeansListView.swift */; };
 		B10000000000000000000036 /* BeanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000036 /* BeanDetailView.swift */; };
 		B10000000000000000000037 /* BeanAnalysisCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000037 /* BeanAnalysisCard.swift */; };
+		B10000000000000000000038 /* YouTubeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000041 /* YouTubeConfiguration.swift */; };
+		B10000000000000000000039 /* YouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000042 /* YouTubeService.swift */; };
+		B10000000000000000000040 /* GrindConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000043 /* GrindConverterService.swift */; };
+		B10000000000000000000041 /* RecipeParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000044 /* RecipeParserService.swift */; };
+		B10000000000000000000042 /* RecipeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000045 /* RecipeSearchViewModel.swift */; };
+		B10000000000000000000043 /* ParsedRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000046 /* ParsedRecipeCard.swift */; };
+		B10000000000000000000044 /* YouTubeVideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000047 /* YouTubeVideoRow.swift */; };
+		B10000000000000000000045 /* YouTubeEmbedPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */; };
+		B10000000000000000000046 /* RecipeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000049 /* RecipeSearchView.swift */; };
+		B10000000000000000000047 /* grind_conversion.json in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000050 /* grind_conversion.json */; };
 		B10000000000000000000029 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* BrewMethod.swift */; };
 		B10000000000000000000028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -78,6 +88,16 @@
 		B20000000000000000000035 /* BeansListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansListView.swift; sourceTree = "<group>"; };
 		B20000000000000000000036 /* BeanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanDetailView.swift; sourceTree = "<group>"; };
 		B20000000000000000000037 /* BeanAnalysisCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanAnalysisCard.swift; sourceTree = "<group>"; };
+		B20000000000000000000041 /* YouTubeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeConfiguration.swift; sourceTree = "<group>"; };
+		B20000000000000000000042 /* YouTubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeService.swift; sourceTree = "<group>"; };
+		B20000000000000000000043 /* GrindConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindConverterService.swift; sourceTree = "<group>"; };
+		B20000000000000000000044 /* RecipeParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeParserService.swift; sourceTree = "<group>"; };
+		B20000000000000000000045 /* RecipeSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000046 /* ParsedRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedRecipeCard.swift; sourceTree = "<group>"; };
+		B20000000000000000000047 /* YouTubeVideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoRow.swift; sourceTree = "<group>"; };
+		B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeEmbedPlayerView.swift; sourceTree = "<group>"; };
+		B20000000000000000000049 /* RecipeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchView.swift; sourceTree = "<group>"; };
+		B20000000000000000000050 /* grind_conversion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grind_conversion.json; sourceTree = "<group>"; };
 		B20000000000000000000030 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
 		B20000000000000000000028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30000000000000000000001 /* BeanDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeanDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +130,7 @@
 				B50000000000000000000004 /* Models */,
 				B50000000000000000000005 /* Services */,
 				B50000000000000000000015 /* ViewModels */,
+				B50000000000000000000016 /* Resources */,
 				B50000000000000000000006 /* Utilities */,
 				B50000000000000000000007 /* Views */,
 				B20000000000000000000028 /* Assets.xcassets */,
@@ -149,6 +170,10 @@
 				B20000000000000000000012 /* MediaStorageService.swift */,
 				B20000000000000000000032 /* GeminiConfiguration.swift */,
 				B20000000000000000000033 /* GeminiService.swift */,
+				B20000000000000000000041 /* YouTubeConfiguration.swift */,
+				B20000000000000000000042 /* YouTubeService.swift */,
+				B20000000000000000000043 /* GrindConverterService.swift */,
+				B20000000000000000000044 /* RecipeParserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -157,8 +182,17 @@
 			isa = PBXGroup;
 			children = (
 				B20000000000000000000034 /* BeanDetailViewModel.swift */,
+				B20000000000000000000045 /* RecipeSearchViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B50000000000000000000016 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000050 /* grind_conversion.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B50000000000000000000006 /* Utilities */ = {
@@ -180,6 +214,7 @@
 				B50000000000000000000012 /* Map */,
 				B50000000000000000000013 /* Bean */,
 				B50000000000000000000014 /* Components */,
+				B50000000000000000000017 /* Recipe */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +283,17 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		B50000000000000000000017 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000049 /* RecipeSearchView.swift */,
+				B20000000000000000000046 /* ParsedRecipeCard.swift */,
+				B20000000000000000000047 /* YouTubeVideoRow.swift */,
+				B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10000000000000000000028 /* Assets.xcassets in Resources */,
+				B10000000000000000000047 /* grind_conversion.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +398,15 @@
 				B10000000000000000000035 /* BeansListView.swift in Sources */,
 				B10000000000000000000036 /* BeanDetailView.swift in Sources */,
 				B10000000000000000000037 /* BeanAnalysisCard.swift in Sources */,
+				B10000000000000000000038 /* YouTubeConfiguration.swift in Sources */,
+				B10000000000000000000039 /* YouTubeService.swift in Sources */,
+				B10000000000000000000040 /* GrindConverterService.swift in Sources */,
+				B10000000000000000000041 /* RecipeParserService.swift in Sources */,
+				B10000000000000000000042 /* RecipeSearchViewModel.swift in Sources */,
+				B10000000000000000000043 /* ParsedRecipeCard.swift in Sources */,
+				B10000000000000000000044 /* YouTubeVideoRow.swift in Sources */,
+				B10000000000000000000045 /* YouTubeEmbedPlayerView.swift in Sources */,
+				B10000000000000000000046 /* RecipeSearchView.swift in Sources */,
 				B10000000000000000000029 /* BrewMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

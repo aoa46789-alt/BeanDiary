@@ -51,7 +51,8 @@ git push -u origin main
 | Phase 1 | 커피 기록, 홈 통계, 타임라인 |
 | Phase 1b | 사진·영상 첨부 |
 | Phase 2 | Gemini AI 원두 분석 (API 키 설정 필요) |
-| Phase 3~4 | 예정 (YouTube, 지도) |
+| Phase 3 | YouTube 레시피 검색·재생·AI 파싱 + EK→C40 환산 |
+| Phase 4 | 예정 (브루 타이머, 지도) |
 
 ## Gemini API 키 설정 (Phase 2)
 
@@ -62,6 +63,13 @@ git push -u origin main
 분석 결과는 `CoffeeBean.analysisJSON`에 캐시되어 같은 원두 재조회 시 API 호출을 줄입니다.
 
 > Firebase AI Logic으로 전환하려면 Firebase Console에서 iOS 앱을 등록하고 `GoogleService-Info.plist`를 추가하세요. (추후 지원)
+
+## YouTube API 설정 (Phase 3)
+
+1. [Google Cloud Console](https://console.cloud.google.com)에서 **YouTube Data API v3** 활성화
+2. API 키 발급 (Gemini와 동일 키 사용 가능)
+3. 앱 **더보기 → 설정 → YouTube API 키** 입력 (비워두면 Gemini 키 재사용)
+4. **원두** → 원두 선택 → **YouTube 레시피 찾기** → 영상 **레시피 분석**
 
 ## 알려진 제한
 

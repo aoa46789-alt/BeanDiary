@@ -1,0 +1,19 @@
+{
+  "ek43_to_comandante_c40": [
+    { "dial": 1.0, "clicks": 12 },
+    { "dial": 1.5, "clicks": 15 },
+    { "dial": 2.0, "clicks": 18 },
+    { "dial": 2.5, "clicks": 22 },
+    { "dial": 3.0, "clicks": 25 },
+    { "dial": 3.5, "clicks": 28 },
+    { "dial": 4.0, "clicks": 31 },
+    { "dial": 4.5, "clicks": 34 },
+    { "dial": 5.0, "clicks": 37 },
+    { "dial": 5.5, "clicks": 40 },
+    { "dial": 6.0, "clicks": 43 },
+    { "dial": 6.5, "clicks": 46 },
+    { "dial": 7.0, "clicks": 49 },
+    { "dial": 7.5, "clicks": 52 },
+    { "dial": 8.0, "clicks": 55 }
+  ]
+}

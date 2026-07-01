@@ -68,6 +68,17 @@ struct BeanDetailView: View {
                     .disabled(viewModel.isLoading)
                 }
             }
+
+            Section("레시피") {
+                NavigationLink {
+                    RecipeSearchView(
+                        bean: bean,
+                        recommendedBrewMethod: viewModel.analysis?.recommendedBrewMethod
+                    )
+                } label: {
+                    Label("YouTube 레시피 찾기", systemImage: "play.rectangle")
+                }
+            }
         }
         .navigationTitle(bean.name)
         .navigationBarTitleDisplayMode(.inline)
