@@ -1,6 +1,6 @@
 import Foundation
 
-struct BrewStep: Codable, Identifiable {
+struct BrewStep: Codable, Identifiable, Equatable {
     var id: Int { order }
     let order: Int
     let label: String
