@@ -30,6 +30,14 @@ struct RecipeSearchView: View {
                     ParsedRecipeCard(recipe: recipe)
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)
+
+                    if !recipe.brewSteps.isEmpty || recipe.totalBrewTimeSec != nil {
+                        NavigationLink {
+                            BrewGuideView(recipe: recipe, bean: viewModel.bean)
+                        } label: {
+                            Label("추출 가이드 시작", systemImage: "timer")
+                        }
+                    }
                 }
             }
 

@@ -50,6 +50,11 @@
 		B10000000000000000000045 /* YouTubeEmbedPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */; };
 		B10000000000000000000046 /* RecipeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000049 /* RecipeSearchView.swift */; };
 		B10000000000000000000047 /* grind_conversion.json in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000050 /* grind_conversion.json */; };
+		B10000000000000000000048 /* BrewGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000051 /* BrewGuideViewModel.swift */; };
+		B10000000000000000000049 /* BrewGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000052 /* BrewGuideView.swift */; };
+		B10000000000000000000050 /* BrewStepTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000053 /* BrewStepTimelineView.swift */; };
+		B10000000000000000000051 /* TastingNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000054 /* TastingNoteView.swift */; };
+		B10000000000000000000052 /* BrewRecipeSummaryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000055 /* BrewRecipeSummaryBar.swift */; };
 		B10000000000000000000029 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* BrewMethod.swift */; };
 		B10000000000000000000028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -98,6 +103,11 @@
 		B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeEmbedPlayerView.swift; sourceTree = "<group>"; };
 		B20000000000000000000049 /* RecipeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchView.swift; sourceTree = "<group>"; };
 		B20000000000000000000050 /* grind_conversion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grind_conversion.json; sourceTree = "<group>"; };
+		B20000000000000000000051 /* BrewGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewGuideViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000052 /* BrewGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewGuideView.swift; sourceTree = "<group>"; };
+		B20000000000000000000053 /* BrewStepTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewStepTimelineView.swift; sourceTree = "<group>"; };
+		B20000000000000000000054 /* TastingNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingNoteView.swift; sourceTree = "<group>"; };
+		B20000000000000000000055 /* BrewRecipeSummaryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewRecipeSummaryBar.swift; sourceTree = "<group>"; };
 		B20000000000000000000030 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
 		B20000000000000000000028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30000000000000000000001 /* BeanDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeanDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +193,7 @@
 			children = (
 				B20000000000000000000034 /* BeanDetailViewModel.swift */,
 				B20000000000000000000045 /* RecipeSearchViewModel.swift */,
+				B20000000000000000000051 /* BrewGuideViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 				B50000000000000000000013 /* Bean */,
 				B50000000000000000000014 /* Components */,
 				B50000000000000000000017 /* Recipe */,
+				B50000000000000000000018 /* Brew */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +304,17 @@
 				B20000000000000000000048 /* YouTubeEmbedPlayerView.swift */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		B50000000000000000000018 /* Brew */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000052 /* BrewGuideView.swift */,
+				B20000000000000000000053 /* BrewStepTimelineView.swift */,
+				B20000000000000000000054 /* TastingNoteView.swift */,
+				B20000000000000000000055 /* BrewRecipeSummaryBar.swift */,
+			);
+			path = Brew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +430,11 @@
 				B10000000000000000000044 /* YouTubeVideoRow.swift in Sources */,
 				B10000000000000000000045 /* YouTubeEmbedPlayerView.swift in Sources */,
 				B10000000000000000000046 /* RecipeSearchView.swift in Sources */,
+				B10000000000000000000048 /* BrewGuideViewModel.swift in Sources */,
+				B10000000000000000000049 /* BrewGuideView.swift in Sources */,
+				B10000000000000000000050 /* BrewStepTimelineView.swift in Sources */,
+				B10000000000000000000051 /* TastingNoteView.swift in Sources */,
+				B10000000000000000000052 /* BrewRecipeSummaryBar.swift in Sources */,
 				B10000000000000000000029 /* BrewMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

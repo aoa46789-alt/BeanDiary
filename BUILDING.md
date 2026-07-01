@@ -52,7 +52,8 @@ git push -u origin main
 | Phase 1b | 사진·영상 첨부 |
 | Phase 2 | Gemini AI 원두 분석 (API 키 설정 필요) |
 | Phase 3 | YouTube 레시피 검색·재생·AI 파싱 + EK→C40 환산 |
-| Phase 4 | 예정 (브루 타이머, 지도) |
+| Phase 3d~f | 브루잉 스톱워치 + 시음 노트 |
+| Phase 4 | 예정 (Live Activity, 지도) |
 
 ## Gemini API 키 설정 (Phase 2)
 

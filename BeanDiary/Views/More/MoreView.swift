@@ -67,7 +67,7 @@ struct SettingsView: View {
             }
 
             Section("앱 정보") {
-                LabeledContent("버전", value: "0.3.0 (Phase 3)")
+                LabeledContent("버전", value: "0.4.0 (Phase 3d)")
             }
         }
         .navigationTitle("설정")
