@@ -1,3 +1,4 @@
+import CoreTransferable
 import Photos
 import PhotosUI
 import SwiftUI

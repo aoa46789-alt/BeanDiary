@@ -19,8 +19,6 @@ final class CoffeeLog {
 
     var bean: CoffeeBean?
     var cafeSpot: CafeSpot?
-
-    @Relationship(deleteRule: .nullify, inverse: \ParsedRecipe.coffeeLogs)
     var usedRecipe: ParsedRecipe?
 
     @Relationship(deleteRule: .cascade, inverse: \DiaryAttachment.coffeeLog)

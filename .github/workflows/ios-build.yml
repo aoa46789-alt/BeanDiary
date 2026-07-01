@@ -14,12 +14,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app
+
+      - name: Warm up Simulator
+        run: xcrun simctl list > /dev/null
+
       - name: Show Xcode version
         run: xcodebuild -version
 
       - name: Build for iOS Simulator
         run: |
           set -o pipefail
+          xcodebuild \
+            -project BeanDiary.xcodeproj \
+            -scheme BeanDiary \
+            -sdk iphonesimulator \
+            -showdestinations | head -n 30
+
           if ! xcodebuild \
             -project BeanDiary.xcodeproj \
             -scheme BeanDiary \
@@ -36,6 +48,11 @@ jobs:
             echo '```' >> "$GITHUB_STEP_SUMMARY"
             tail -n 120 xcodebuild.log >> "$GITHUB_STEP_SUMMARY"
             echo '```' >> "$GITHUB_STEP_SUMMARY"
+            grep "error:" xcodebuild.log | head -20 | while IFS= read -r line; do
+              echo "::error title=Build::$line"
+            done
+            echo "--- build errors ---"
+            grep "error:" xcodebuild.log || true
             exit 1
           fi
 

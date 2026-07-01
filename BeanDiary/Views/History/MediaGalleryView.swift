@@ -1,3 +1,4 @@
+import SwiftData
 import SwiftUI
 
 struct MediaGalleryView: View {
@@ -15,7 +16,7 @@ struct MediaGalleryView: View {
         } else {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    ForEach(sortedAttachments, id: \.persistentModelID) { attachment in
+                    ForEach(sortedAttachments) { attachment in
                         Button {
                             if attachment.type == .photo {
                                 selectedPhoto = attachment
