@@ -60,7 +60,7 @@ final class CoffeeLog {
     }
 }
 
-enum BrewMethod: String, CaseIterable, Identifiable {
+enum BrewMethod: String, CaseIterable, Identifiable, Hashable {
     case handDrip = "핸드드립"
     case espresso = "에스프레소"
     case frenchPress = "프렌치프레스"

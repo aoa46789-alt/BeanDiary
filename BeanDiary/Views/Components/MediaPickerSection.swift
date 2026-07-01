@@ -194,7 +194,7 @@ private struct PendingMediaThumbnail: View {
     }
 }
 
-private struct VideoTransfer: Transferable {
+private struct VideoTransfer: Transferable, Sendable {
     let url: URL
 
     static var transferRepresentation: some TransferRepresentation {

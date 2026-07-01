@@ -2,6 +2,9 @@
 
 커피 기록·분석 iOS 앱 (SwiftUI + SwiftData)
 
+**Repository:** https://github.com/aoa46789-alt/BeanDiary  
+**CI:** [Actions → iOS Build](https://github.com/aoa46789-alt/BeanDiary/actions)
+
 ## Mac이 없을 때
 
 **[BUILDING.md](BUILDING.md)** 를 참고하세요.

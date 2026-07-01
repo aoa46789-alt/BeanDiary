@@ -22,11 +22,6 @@ struct RatingView: View {
 }
 
 #Preview {
-    struct PreviewWrapper: View {
-        @State private var rating = 3
-        var body: some View {
-            RatingView(rating: $rating)
-        }
-    }
-    return PreviewWrapper()
+    @Previewable @State var rating = 3
+    RatingView(rating: $rating)
 }

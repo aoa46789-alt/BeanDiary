@@ -44,10 +44,8 @@ enum CoffeeStatsService {
 enum BeanService {
     static func findOrCreate(name: String, in context: ModelContext) -> CoffeeBean {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        let descriptor = FetchDescriptor<CoffeeBean>(
-            predicate: #Predicate { $0.name == trimmed }
-        )
-        if let existing = try? context.fetch(descriptor).first {
+        let descriptor = FetchDescriptor<CoffeeBean>()
+        if let existing = (try? context.fetch(descriptor))?.first(where: { $0.name == trimmed }) {
             return existing
         }
         let bean = CoffeeBean(name: trimmed)
