@@ -38,7 +38,6 @@ if ($missingOnDisk.Count -gt 0) {
 
 $requiredFiles = @(
     "BeanDiary\BeanDiaryApp.swift",
-    "BeanDiary\Info.plist",
     "BeanDiary\Assets.xcassets\Contents.json",
     "BeanDiary.xcodeproj\xcshareddata\xcschemes\BeanDiary.xcscheme"
 ) | ForEach-Object { Join-Path $root $_ }

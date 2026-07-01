@@ -21,6 +21,9 @@ final class ParsedRecipe {
     var stepsJSON: String
     var fetchedAt: Date
 
+    @Relationship(deleteRule: .nullify, inverse: \CoffeeLog.usedRecipe)
+    var coffeeLogs: [CoffeeLog]
+
     init(
         beanName: String,
         sourceType: String = "manual",
@@ -57,5 +60,6 @@ final class ParsedRecipe {
         self.grindConversionNote = grindConversionNote
         self.stepsJSON = stepsJSON
         self.fetchedAt = fetchedAt
+        self.coffeeLogs = []
     }
 }

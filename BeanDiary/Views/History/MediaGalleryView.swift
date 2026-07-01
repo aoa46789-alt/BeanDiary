@@ -31,11 +31,21 @@ struct MediaGalleryView: View {
                     }
                 }
             }
-            .fullScreenCover(item: $selectedPhoto) { attachment in
-                PhotoViewerView(attachment: attachment)
+            .fullScreenCover(isPresented: Binding(
+                get: { selectedPhoto != nil },
+                set: { if !$0 { selectedPhoto = nil } }
+            )) {
+                if let attachment = selectedPhoto {
+                    PhotoViewerView(attachment: attachment)
+                }
             }
-            .sheet(item: $selectedVideo) { attachment in
-                VideoPlayerScreen(attachment: attachment)
+            .sheet(isPresented: Binding(
+                get: { selectedVideo != nil },
+                set: { if !$0 { selectedVideo = nil } }
+            )) {
+                if let attachment = selectedVideo {
+                    VideoPlayerScreen(attachment: attachment)
+                }
             }
         }
     }

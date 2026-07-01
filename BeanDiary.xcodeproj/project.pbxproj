@@ -34,6 +34,7 @@
 		B10000000000000000000025 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000025 /* MoreView.swift */; };
 		B10000000000000000000026 /* CafeMapPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000026 /* CafeMapPlaceholderView.swift */; };
 		B10000000000000000000027 /* BeansListPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000027 /* BeansListPlaceholderView.swift */; };
+		B10000000000000000000029 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* BrewMethod.swift */; };
 		B10000000000000000000028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +66,8 @@
 		B20000000000000000000025 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		B20000000000000000000026 /* CafeMapPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapPlaceholderView.swift; sourceTree = "<group>"; };
 		B20000000000000000000027 /* BeansListPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansListPlaceholderView.swift; sourceTree = "<group>"; };
+		B20000000000000000000030 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
 		B20000000000000000000028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B20000000000000000000029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30000000000000000000001 /* BeanDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeanDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,7 +100,6 @@
 				B50000000000000000000006 /* Utilities */,
 				B50000000000000000000007 /* Views */,
 				B20000000000000000000028 /* Assets.xcassets */,
-				B20000000000000000000029 /* Info.plist */,
 			);
 			path = BeanDiary;
 			sourceTree = "<group>";
@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B20000000000000000000003 /* CoffeeBean.swift */,
+				B20000000000000000000030 /* BrewMethod.swift */,
 				B20000000000000000000004 /* CoffeeLog.swift */,
 				B20000000000000000000005 /* DiaryAttachment.swift */,
 				B20000000000000000000006 /* ParsedRecipe.swift */,
@@ -318,6 +319,7 @@
 				B10000000000000000000025 /* MoreView.swift in Sources */,
 				B10000000000000000000026 /* CafeMapPlaceholderView.swift in Sources */,
 				B10000000000000000000027 /* BeansListPlaceholderView.swift in Sources */,
+				B10000000000000000000029 /* BrewMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +379,6 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeanDiary/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeanDiary;
 				INFOPLIST_KEY_NSCameraUsageDescription = "커피 기록용 사진을 촬영하기 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";
@@ -408,7 +409,6 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeanDiary/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeanDiary;
 				INFOPLIST_KEY_NSCameraUsageDescription = "커피 기록용 사진을 촬영하기 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";

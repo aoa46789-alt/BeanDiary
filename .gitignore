@@ -12,6 +12,16 @@ xcuserdata/
 # Firebase
 GoogleService-Info.plist
 
+# Debug / CI artifacts
+xcodebuild.log
+xcodebuild-log.zip
+xcodebuild-log-remote.zip
+gh-job-logs.zip
+gh-*.json
+job-page.html
+ios-build-remote.yml
+_log/
+
 # macOS
 .DS_Store
 
