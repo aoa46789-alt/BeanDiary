@@ -80,8 +80,8 @@ enum MediaStorageService {
     }
 
     static func deleteFiles(for attachment: DiaryAttachment) {
-        let fileURL = fileURL(for: attachment.fileName)
-        try? FileManager.default.removeItem(at: fileURL)
+        let mediaURL = fileURL(for: attachment.fileName)
+        try? FileManager.default.removeItem(at: mediaURL)
         if let thumb = attachment.thumbnailFileName {
             try? FileManager.default.removeItem(at: fileURL(for: thumb))
         }
