@@ -39,7 +39,11 @@ if ($missingOnDisk.Count -gt 0) {
 $requiredFiles = @(
     "BeanDiary\BeanDiaryApp.swift",
     "BeanDiary\Assets.xcassets\Contents.json",
-    "BeanDiary.xcodeproj\xcshareddata\xcschemes\BeanDiary.xcscheme"
+    "BeanDiary\Assets.xcassets\AppIcon.appiconset\AppIcon.png",
+    "BeanDiary\PrivacyInfo.xcprivacy",
+    "BeanDiary.xcodeproj\xcshareddata\xcschemes\BeanDiary.xcscheme",
+    "APP_STORE.md",
+    "PRIVACY_POLICY.md"
 ) | ForEach-Object { Join-Path $root $_ }
 
 Write-Host "`n=== 필수 파일 ==="

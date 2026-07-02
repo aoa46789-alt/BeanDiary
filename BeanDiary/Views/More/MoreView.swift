@@ -67,7 +67,8 @@ struct SettingsView: View {
             }
 
             Section("앱 정보") {
-                LabeledContent("버전", value: "0.4.0 (Phase 3d)")
+                LabeledContent("버전", value: AppVersion.full)
+                Link("개인정보 처리방침", destination: AppVersion.privacyPolicyURL)
             }
         }
         .navigationTitle("설정")

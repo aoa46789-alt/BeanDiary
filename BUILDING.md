@@ -57,6 +57,7 @@ git push -u origin main
 | Phase 4a | 카페 지도 (MapKit 검색, 필터, 좋아요/방문예정/숨김, AI 미리보기) |
 | Phase 4b | 카페 미리보기 UI 고도화 (감성 배지, 태그, 캐시 표시) |
 | Phase 4 | 오프라인 배너, AI/YouTube 캐시 활용 |
+| Phase 5 | App Store 출시 준비 — **[APP_STORE.md](APP_STORE.md)** 참고 |
 
 ## Gemini API 키 설정 (Phase 2)
 

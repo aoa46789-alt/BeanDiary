@@ -1,0 +1,8 @@
+BeanDiary 1.0 출시!
+
+• 커피 기록, 홈 통계, 타임라인
+• Gemini AI 원두 분석
+• YouTube 레시피 검색·AI 파싱·브루잉 가이드
+• Live Activity 브루잉 타이머
+• 카페 지도 & AI 미리보기
+• 오프라인 캐시 지원
