@@ -35,10 +35,17 @@ struct CafeListView: View {
                             }
                         }
                         if let preview = spot.cafePreview {
-                            Text(preview.tasteSummary)
-                                .font(.caption2)
-                                .foregroundStyle(.secondary)
-                                .lineLimit(2)
+                            HStack(spacing: 6) {
+                                Text(preview.tasteSummary)
+                                    .font(.caption2)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(2)
+                                if preview.reviewSentiment.contains("긍정") {
+                                    Image(systemName: "hand.thumbsup.fill")
+                                        .font(.caption2)
+                                        .foregroundStyle(.green)
+                                }
+                            }
                         }
                     }
                 }

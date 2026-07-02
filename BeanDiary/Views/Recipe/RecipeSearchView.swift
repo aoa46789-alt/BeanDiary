@@ -16,6 +16,10 @@ struct RecipeSearchView: View {
 
     var body: some View {
         List {
+            OfflineBanner()
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
+
             Section {
                 LabeledContent("검색어", value: viewModel.searchQuery)
                 if !YouTubeConfiguration.isConfigured {

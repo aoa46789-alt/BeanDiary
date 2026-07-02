@@ -8,6 +8,7 @@ struct CafeDetailSheet: View {
     var viewModel: CafeMapViewModel
 
     @State private var showHideOptions = false
+    @State private var connectivity = ConnectivityMonitor.shared
 
     var body: some View {
         NavigationStack {
@@ -39,6 +40,11 @@ struct CafeDetailSheet: View {
         }
         .presentationDetents([.medium, .large])
         .presentationDragIndicator(.visible)
+        .task {
+            guard spot.cafePreview == nil, shouldOfferPreview, GeminiConfiguration.isConfigured,
+                  connectivity.isOnline else { return }
+            await viewModel.fetchPreview(for: spot, context: modelContext)
+        }
     }
 
     private var header: some View {
@@ -85,9 +91,13 @@ struct CafeDetailSheet: View {
     @ViewBuilder
     private var previewSection: some View {
         if let preview = spot.cafePreview {
-            CafePreviewCard(preview: preview)
-        } else if spot.isColumbusGuide || spot.isDripSpecialty == true || spot.visitStatus == CafeVisitStatus.wishlist {
+            VStack(alignment: .leading, spacing: 10) {
+                CafePreviewCard(preview: preview, fetchedAt: spot.previewFetchedAt)
+                previewActions
+            }
+        } else if shouldOfferPreview {
             VStack(alignment: .leading, spacing: 8) {
+                OfflineBanner()
                 Button {
                     Task { await viewModel.fetchPreview(for: spot, context: modelContext) }
                 } label: {
@@ -95,7 +105,13 @@ struct CafeDetailSheet: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
-                .disabled(viewModel.isLoadingPreview || !GeminiConfiguration.isConfigured)
+                .disabled(viewModel.isLoadingPreview || !GeminiConfiguration.isConfigured || !connectivity.isOnline)
+
+                if !connectivity.isOnline {
+                    Text("네트워크 연결 후 미리보기를 불러올 수 있습니다.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
 
                 if viewModel.isLoadingPreview {
                     ProgressView("카페 정보 분석 중…")
@@ -105,6 +121,21 @@ struct CafeDetailSheet: View {
                 }
             }
         }
+    }
+
+    private var shouldOfferPreview: Bool {
+        spot.isColumbusGuide || spot.isDripSpecialty == true || spot.visitStatus == CafeVisitStatus.wishlist
+    }
+
+    private var previewActions: some View {
+        Button {
+            Task { await viewModel.fetchPreview(for: spot, context: modelContext, forceRefresh: true) }
+        } label: {
+            Label("미리보기 새로고침", systemImage: "arrow.clockwise")
+                .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.bordered)
+        .disabled(viewModel.isLoadingPreview || !GeminiConfiguration.isConfigured || !connectivity.isOnline)
     }
 
     private var noteSection: some View {

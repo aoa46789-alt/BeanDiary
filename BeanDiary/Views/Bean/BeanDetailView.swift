@@ -9,6 +9,10 @@ struct BeanDetailView: View {
 
     var body: some View {
         Form {
+            OfflineBanner()
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
+
             Section("원두 정보") {
                 TextField("이름", text: $bean.name)
                 TextField("로스터리", text: optionalBinding(\.roaster))

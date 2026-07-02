@@ -55,7 +55,8 @@ git push -u origin main
 | Phase 3d~f | 브루잉 스톱워치 + 시음 노트 |
 | Phase 3e | Live Activity (잠금화면·다이나믹 아일랜드 브루잉 타이머) |
 | Phase 4a | 카페 지도 (MapKit 검색, 필터, 좋아요/방문예정/숨김, AI 미리보기) |
-| Phase 4 | 예정 (지도 고도화, 폴리시) |
+| Phase 4b | 카페 미리보기 UI 고도화 (감성 배지, 태그, 캐시 표시) |
+| Phase 4 | 오프라인 배너, AI/YouTube 캐시 활용 |
 
 ## Gemini API 키 설정 (Phase 2)
 
@@ -89,6 +90,12 @@ git push -u origin main
 2. 앱을 나가도 잠금화면·다이나믹 아일랜드에 단계별 타이머 표시
 3. 일시정지/단계 변경 시 Live Activity 자동 갱신
 4. iOS **설정 → BeanDiary → Live Activity** 허용 필요
+
+## 오프라인 동작 (Phase 4)
+
+- 원두 AI 분석·카페 미리보기·YouTube 검색은 **네트워크 필요**
+- 이전에 불러온 분석/미리보기는 기기에 캐시되어 오프라인에서도 표시
+- 오프라인 시 화면 상단에 안내 배너 표시
 
 ## 알려진 제한
 

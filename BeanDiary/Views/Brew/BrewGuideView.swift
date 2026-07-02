@@ -98,6 +98,12 @@ struct BrewGuideView: View {
                         .font(.caption)
                         .foregroundStyle(.orange)
                 }
+                if BrewLiveActivityService.isSupported {
+                    Text("잠금화면·다이나믹 아일랜드에서도 타이머를 확인할 수 있어요")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                        .multilineTextAlignment(.center)
+                }
             }
         }
         .frame(maxWidth: .infinity)

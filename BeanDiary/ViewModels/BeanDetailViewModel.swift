@@ -24,6 +24,11 @@ final class BeanDetailViewModel {
             return
         }
 
+        guard ConnectivityMonitor.shared.isOnline else {
+            errorMessage = "오프라인 상태입니다. 저장된 분석 결과만 확인할 수 있습니다."
+            return
+        }
+
         isLoading = true
         errorMessage = nil
         defer { isLoading = false }

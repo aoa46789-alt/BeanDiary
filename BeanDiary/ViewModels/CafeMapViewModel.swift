@@ -56,7 +56,15 @@ final class CafeMapViewModel {
     }
 
     func fetchPreview(for spot: CafeSpot, context: ModelContext) async {
-        if spot.cafePreview != nil { return }
+        await fetchPreview(for: spot, context: context, forceRefresh: false)
+    }
+
+    func fetchPreview(for spot: CafeSpot, context: ModelContext, forceRefresh: Bool) async {
+        if spot.cafePreview != nil, !forceRefresh { return }
+        guard ConnectivityMonitor.shared.isOnline else {
+            previewError = "오프라인 상태입니다. 네트워크 연결 후 다시 시도하세요."
+            return
+        }
         isLoadingPreview = true
         previewError = nil
         defer { isLoadingPreview = false }
