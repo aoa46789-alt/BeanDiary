@@ -33,6 +33,8 @@ final class BrewGuideViewModel {
     private var stepEndTime: Date?
     private var timerTask: Task<Void, Never>?
 
+    var stepEndDate: Date? { stepEndTime }
+
     init(recipe: ParsedRecipe, beanName: String) {
         self.recipe = recipe
         self.beanName = beanName
@@ -79,6 +81,7 @@ final class BrewGuideViewModel {
         phase = .brewing
         beginStep(at: 0)
         startTimerLoop()
+        syncLiveActivity()
     }
 
     func togglePause() {
@@ -97,6 +100,7 @@ final class BrewGuideViewModel {
         default:
             break
         }
+        syncLiveActivity()
     }
 
     func goToPreviousStep() {
@@ -106,6 +110,7 @@ final class BrewGuideViewModel {
         if phase == .brewing {
             startTimerLoop()
         }
+        syncLiveActivity()
     }
 
     func goToNextStep() {
@@ -118,6 +123,7 @@ final class BrewGuideViewModel {
         if phase == .brewing {
             startTimerLoop()
         }
+        syncLiveActivity()
     }
 
     func cancel() {
@@ -128,6 +134,7 @@ final class BrewGuideViewModel {
         currentStepIndex = 0
         stepRemainingSec = steps.first?.durationSec ?? 0
         completedStepIndices = []
+        syncLiveActivity()
     }
 
     func refreshRemainingFromClock() {
@@ -166,6 +173,7 @@ final class BrewGuideViewModel {
         }
 
         beginStep(at: currentStepIndex + 1)
+        syncLiveActivity()
     }
 
     private func finishBrew() {
@@ -175,5 +183,10 @@ final class BrewGuideViewModel {
         stepRemainingSec = 0
         phase = .finished
         BrewHapticService.brewCompleted()
+        syncLiveActivity()
+    }
+
+    private func syncLiveActivity() {
+        BrewLiveActivityService.sync(with: self)
     }
 }

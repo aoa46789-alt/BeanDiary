@@ -67,6 +67,12 @@
 		B10000000000000000000062 /* AddCafeSearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000066 /* AddCafeSearchSheet.swift */; };
 		B10000000000000000000029 /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* BrewMethod.swift */; };
 		B10000000000000000000028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* Assets.xcassets */; };
+		B10000000000000000000063 /* BrewActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000067 /* BrewActivityAttributes.swift */; };
+		B10000000000000000000064 /* BrewLiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000068 /* BrewLiveActivityService.swift */; };
+		B10000000000000000000071 /* BrewActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000067 /* BrewActivityAttributes.swift */; };
+		B10000000000000000000072 /* BeanDiaryWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000069 /* BeanDiaryWidgetsBundle.swift */; };
+		B10000000000000000000073 /* BrewLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000070 /* BrewLiveActivityWidget.swift */; };
+		B10000000000000000000074 /* BeanDiaryWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B30000000000000000000002 /* BeanDiaryWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +113,10 @@
 		B20000000000000000000064 /* CafePinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePinView.swift; sourceTree = "<group>"; };
 		B20000000000000000000065 /* CafePreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePreviewCard.swift; sourceTree = "<group>"; };
 		B20000000000000000000066 /* AddCafeSearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCafeSearchSheet.swift; sourceTree = "<group>"; };
+		B20000000000000000000067 /* BrewActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewActivityAttributes.swift; sourceTree = "<group>"; };
+		B20000000000000000000068 /* BrewLiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewLiveActivityService.swift; sourceTree = "<group>"; };
+		B20000000000000000000069 /* BeanDiaryWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanDiaryWidgetsBundle.swift; sourceTree = "<group>"; };
+		B20000000000000000000070 /* BrewLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewLiveActivityWidget.swift; sourceTree = "<group>"; };
 		B20000000000000000000032 /* GeminiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiConfiguration.swift; sourceTree = "<group>"; };
 		B20000000000000000000033 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
 		B20000000000000000000034 /* BeanDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanDetailViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +141,7 @@
 		B20000000000000000000030 /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
 		B20000000000000000000028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30000000000000000000001 /* BeanDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeanDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30000000000000000000002 /* BeanDiaryWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BeanDiaryWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,13 +152,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B40000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+		B65000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B90000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60000000000000000000002;
+			remoteInfo = BeanDiaryWidgets;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXGroup section */
 		B50000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
 				B50000000000000000000002 /* BeanDiary */,
+				B50000000000000000000019 /* BeanDiaryWidgets */,
 				B50000000000000000000003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				B30000000000000000000001 /* BeanDiary.app */,
+				B30000000000000000000002 /* BeanDiaryWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +220,7 @@
 				B20000000000000000000010 /* CafePreview.swift */,
 				B20000000000000000000031 /* BeanAnalysis.swift */,
 				B20000000000000000000056 /* CafeVisitStatus.swift */,
+				B20000000000000000000067 /* BrewActivityAttributes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +238,7 @@
 				B20000000000000000000044 /* RecipeParserService.swift */,
 				B20000000000000000000057 /* CafeMapService.swift */,
 				B20000000000000000000058 /* CafePreviewService.swift */,
+				B20000000000000000000068 /* BrewLiveActivityService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -347,7 +379,24 @@
 			path = Brew;
 			sourceTree = "<group>";
 		};
+		B50000000000000000000019 /* BeanDiaryWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000069 /* BeanDiaryWidgetsBundle.swift */,
+				B20000000000000000000070 /* BrewLiveActivityWidget.swift */,
+			);
+			path = BeanDiaryWidgets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXTargetDependency section */
+		B65000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60000000000000000000002 /* BeanDiaryWidgets */;
+			targetProxy = B65000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXNativeTarget section */
 		B60000000000000000000001 /* BeanDiary */ = {
@@ -357,15 +406,33 @@
 				B70000000000000000000001 /* Sources */,
 				B40000000000000000000001 /* Frameworks */,
 				B70000000000000000000002 /* Resources */,
+				B70000000000000000000004 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B65000000000000000000002 /* PBXTargetDependency */,
 			);
 			name = BeanDiary;
 			productName = BeanDiary;
 			productReference = B30000000000000000000001 /* BeanDiary.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B60000000000000000000002 /* BeanDiaryWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80000000000000000000003 /* Build configuration list for PBXNativeTarget "BeanDiaryWidgets" */;
+			buildPhases = (
+				B70000000000000000000003 /* Sources */,
+				B40000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeanDiaryWidgets;
+			productName = BeanDiaryWidgets;
+			productReference = B30000000000000000000002 /* BeanDiaryWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -378,6 +445,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					B60000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B60000000000000000000002 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -397,6 +467,7 @@
 			projectRoot = "";
 			targets = (
 				B60000000000000000000001 /* BeanDiary */,
+				B60000000000000000000002 /* BeanDiaryWidgets */,
 			);
 		};
 /* End PBXProject section */
@@ -413,7 +484,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B70000000000000000000004 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B10000000000000000000074 /* BeanDiaryWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B70000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000071 /* BrewActivityAttributes.swift in Sources */,
+				B10000000000000000000072 /* BeanDiaryWidgetsBundle.swift in Sources */,
+				B10000000000000000000073 /* BrewLiveActivityWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B70000000000000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +570,8 @@
 				B10000000000000000000050 /* BrewStepTimelineView.swift in Sources */,
 				B10000000000000000000051 /* TastingNoteView.swift in Sources */,
 				B10000000000000000000052 /* BrewRecipeSummaryBar.swift in Sources */,
+				B10000000000000000000063 /* BrewActivityAttributes.swift in Sources */,
+				B10000000000000000000064 /* BrewLiveActivityService.swift in Sources */,
 				B10000000000000000000029 /* BrewMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +637,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "커피 기록에 사진과 영상을 첨부하기 위해 앨범 접근이 필요합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 카페 검색 및 지도 표시를 위해 위치 접근이 필요합니다.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -572,6 +670,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "촬영한 사진을 기록에 저장하기 위해 필요합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "커피 기록에 사진과 영상을 첨부하기 위해 앨범 접근이 필요합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 카페 검색 및 지도 표시를 위해 위치 접근이 필요합니다.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -585,6 +684,60 @@
                 SWIFT_EMIT_LOC_STRINGS = YES;
                 SWIFT_STRICT_CONCURRENCY = minimal;
                 SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BeanDiary Widgets";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beandiary.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BeanDiary Widgets";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beandiary.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -606,6 +759,15 @@
 			buildConfigurations = (
 				BA0000000000000000000003 /* Debug */,
 				BA0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80000000000000000000003 /* Build configuration list for PBXNativeTarget "BeanDiaryWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0000000000000000000005 /* Debug */,
+				BA0000000000000000000006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

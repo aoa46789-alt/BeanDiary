@@ -53,8 +53,9 @@ git push -u origin main
 | Phase 2 | Gemini AI 원두 분석 (API 키 설정 필요) |
 | Phase 3 | YouTube 레시피 검색·재생·AI 파싱 + EK→C40 환산 |
 | Phase 3d~f | 브루잉 스톱워치 + 시음 노트 |
+| Phase 3e | Live Activity (잠금화면·다이나믹 아일랜드 브루잉 타이머) |
 | Phase 4a | 카페 지도 (MapKit 검색, 필터, 좋아요/방문예정/숨김, AI 미리보기) |
-| Phase 4 | 예정 (Live Activity, 지도 고도화) |
+| Phase 4 | 예정 (지도 고도화, 폴리시) |
 
 ## Gemini API 키 설정 (Phase 2)
 
@@ -81,6 +82,13 @@ git push -u origin main
 4. 필터: 전체, 좋아요, 방문 예정, 콜럼버스, 드립 전문, 숨긴 곳
 5. Gemini API 키 설정 시 **AI 미리보기** (콜럼버스·드립·방문예정 카페)
 6. **Apple 지도** / **네이버 지도**로 길찾기
+
+## Live Activity (Phase 3e)
+
+1. **원두** → 레시피 분석 → **추출 가이드 시작** → **추출 시작**
+2. 앱을 나가도 잠금화면·다이나믹 아일랜드에 단계별 타이머 표시
+3. 일시정지/단계 변경 시 Live Activity 자동 갱신
+4. iOS **설정 → BeanDiary → Live Activity** 허용 필요
 
 ## 알려진 제한
 
